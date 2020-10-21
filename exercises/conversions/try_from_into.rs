@@ -11,8 +11,6 @@ struct Color {
     blue: u8,
 }
 
-// I AM NOT DONE
-
 // Your task is to complete this implementation
 // and return an Ok result of inner type Color.
 // You need to create an implementation for a tuple of three integers,
@@ -25,19 +23,35 @@ struct Color {
 // Tuple implementation
 impl TryFrom<(i16, i16, i16)> for Color {
     type Error = String;
-    fn try_from(tuple: (i16, i16, i16)) -> Result<Self, Self::Error> {}
+    fn try_from(tuple: (i16, i16, i16)) -> Result<Self, Self::Error> {
+        let (r, g, b) = tuple;
+        let rgb = (u8::try_from(r), u8::try_from(g), u8::try_from(b));
+        let (red, green, blue) = match rgb {
+            (Ok(r), Ok(g), Ok(b)) => (r, g, b),
+            _ => return Err(String::from("Out of bounds"))
+        };
+        Ok(Color{red, green, blue})
+    }
 }
 
 // Array implementation
 impl TryFrom<[i16; 3]> for Color {
     type Error = String;
-    fn try_from(arr: [i16; 3]) -> Result<Self, Self::Error> {}
+    fn try_from(arr: [i16; 3]) -> Result<Self, Self::Error> {
+        let [r, g, b] = arr;
+        (r, g, b).try_into()
+    }
 }
 
 // Slice implementation
 impl TryFrom<&[i16]> for Color {
     type Error = String;
-    fn try_from(slice: &[i16]) -> Result<Self, Self::Error> {}
+    fn try_from(slice: &[i16]) -> Result<Self, Self::Error> {
+        match slice {
+            [r, g, b] => Color::try_from((*r, *g, *b)),
+            _ => Err(String::from("Wrong slice size"))
+        }
+    }
 }
 
 fn main() {
