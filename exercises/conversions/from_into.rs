@@ -50,6 +50,9 @@ impl From<&str> for Person {
                 },
                 None => return Person::default(),
             };
+            if let Some(x) = iter.next() {
+                return Person::default()
+            };
             Person{name, age}
         // }
     }

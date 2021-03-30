@@ -32,6 +32,9 @@ impl FromStr for Person {
             Ok(x) => x,
             Err(_) => return Err("blah".into()),
         };
+        if let Some(x) = iter.next() {
+            return Err("blah".into())
+        };
         Ok(Person { name, age })
     }
 }
