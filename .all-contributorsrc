@@ -673,6 +673,107 @@
       "contributions": [
         "content"
       ]
+    },
+    {
+      "login": "jfchevrette",
+      "name": "Jean-Francois Chevrette",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3001?v=4",
+      "profile": "https://github.com/jfchevrette",
+      "contributions": [
+        "content",
+        "code"
+      ]
+    },
+    {
+      "login": "jbaber",
+      "name": "John Baber-Lucero",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1908117?v=4",
+      "profile": "https://github.com/jbaber",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "tal-zvon",
+      "name": "Tal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3195851?v=4",
+      "profile": "https://github.com/tal-zvon",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "apogeeoak",
+      "name": "apogeeoak",
+      "avatar_url": "https://avatars.githubusercontent.com/u/59737221?v=4",
+      "profile": "https://github.com/apogeeoak",
+      "contributions": [
+        "content",
+        "code"
+      ]
+    },
+    {
+      "login": "Crell",
+      "name": "Larry Garfield",
+      "avatar_url": "https://avatars.githubusercontent.com/u/254863?v=4",
+      "profile": "http://www.garfieldtech.com/",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "circumspect",
+      "name": "circumspect",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40770208?v=4",
+      "profile": "https://github.com/circumspect",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "cjwyett",
+      "name": "Cyrus Wyett",
+      "avatar_url": "https://avatars.githubusercontent.com/u/34195737?v=4",
+      "profile": "https://github.com/cjwyett",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "cadolphs",
+      "name": "cadolphs",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13894820?v=4",
+      "profile": "https://github.com/cadolphs",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "hpwxf",
+      "name": "Pascal H.",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26146722?v=4",
+      "profile": "https://www.haveneer.com",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "chapeupreto",
+      "name": "Rod Elias",
+      "avatar_url": "https://avatars.githubusercontent.com/u/834048?v=4",
+      "profile": "https://twitter.com/chapeupreto",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "blerchy",
+      "name": "Matt Lebl",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2555355?v=4",
+      "profile": "https://github.com/blerchy",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 8,

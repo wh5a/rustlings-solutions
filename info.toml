@@ -284,7 +284,7 @@ hint = """
 Rust has more than one type of struct. Three actually, all variants are used to package related data together.
 There are normal (or classic) structs. These are named collections of related data stored in fields.
 Tuple structs are basically just named tuples.
-Finally, Unit structs. These don't have and fields and are useful for generics.
+Finally, Unit structs. These don't have any fields and are useful for generics.
 
 In this exercise you need to complete and implement one of each kind.
 Read more about structs in The Book: https://doc.rust-lang.org/book/ch05-01-defining-structs.html"""
@@ -295,7 +295,7 @@ path = "exercises/structs/structs2.rs"
 mode = "test"
 hint = """
 Creating instances of structs is easy, all you need to do is assign some values to its fields.
-There is however some shortcuts that can be taken when instantiating structs.
+There are however some shortcuts that can be taken when instantiating structs.
 Have a look in The Book, to find out more: https://doc.rust-lang.org/stable/book/ch05-01-defining-structs.html#creating-instances-from-other-instances-with-struct-update-syntax"""
 
 [[exercises]]
@@ -470,7 +470,7 @@ and give it a try!"""
 [[exercises]]
 name = "errors3"
 path = "exercises/error_handling/errors3.rs"
-mode = "test"
+mode = "compile"
 hint = """
 If other functions can return a `Result`, why shouldn't `main`?"""
 
@@ -694,7 +694,7 @@ Step 2 & step 2.1:
 Very similar to the lines above and below. You've got this!
 Step 3:
 An iterator goes through all elements in a collection, but what if we've run out of
-elements? What should we expect here? If you're stuck, take a look at 
+elements? What should we expect here? If you're stuck, take a look at
 https://doc.rust-lang.org/std/iter/trait.Iterator.html for some ideas.
 """
 

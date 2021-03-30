@@ -131,7 +131,7 @@ fn all_exercises_require_confirmation() {
             file.read_to_string(&mut s).unwrap();
             s
         };
-        source.matches("// I AM NOT DONE").next().expect(&format!(
+        source.matches("// I AM NOT DONE").next().unwrap_or_else(|| panic!(
             "There should be an `I AM NOT DONE` annotation in {:?}",
             path
         ));
@@ -181,3 +181,81 @@ fn run_single_test_success_without_output() {
         .code(0)
         .stdout(predicates::str::contains("THIS TEST TOO SHALL PAS").not());
 }
+
+#[test]
+fn run_rustlings_list() {
+    Command::cargo_bin("rustlings")
+        .unwrap()
+        .args(&["list"])
+        .current_dir("tests/fixture/success")
+        .assert()
+        .success();
+}
+
+#[test]
+fn run_rustlings_list_conflicting_display_options() {
+    Command::cargo_bin("rustlings")
+        .unwrap()
+        .args(&["list", "--names", "--paths"])
+        .current_dir("tests/fixture/success")
+        .assert()
+        .failure();
+}
+
+#[test]
+fn run_rustlings_list_conflicting_solve_options() {
+    Command::cargo_bin("rustlings")
+        .unwrap()
+        .args(&["list", "--solved", "--unsolved"])
+        .current_dir("tests/fixture/success")
+        .assert()
+        .failure();
+}
+
+#[test]
+fn run_rustlings_list_no_pending() {
+    Command::cargo_bin("rustlings")
+        .unwrap()
+        .args(&["list"])
+        .current_dir("tests/fixture/success")
+        .assert()
+        .success()
+        .stdout(predicates::str::contains("Pending").not());
+}
+
+#[test]
+fn run_rustlings_list_both_done_and_pending() {
+    Command::cargo_bin("rustlings")
+        .unwrap()
+        .args(&["list"])
+        .current_dir("tests/fixture/state")
+        .assert()
+        .success()
+        .stdout(
+            predicates::str::contains("Done")
+                .and(predicates::str::contains("Pending"))
+        );
+}
+
+#[test]
+fn run_rustlings_list_without_pending() {
+    Command::cargo_bin("rustlings")
+        .unwrap()
+        .args(&["list", "--solved"])
+        .current_dir("tests/fixture/state")
+        .assert()
+        .success()
+        .stdout(predicates::str::contains("Pending").not());
+}
+
+#[test]
+fn run_rustlings_list_without_done() {
+    Command::cargo_bin("rustlings")
+        .unwrap()
+        .args(&["list", "--unsolved"])
+        .current_dir("tests/fixture/state")
+        .assert()
+        .success()
+        .stdout(predicates::str::contains("Done").not());
+}
+

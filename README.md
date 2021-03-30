@@ -1,6 +1,5 @@
-![crab pet](https://i.imgur.com/LbZJgmm.gif)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-72-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-83-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 # rustlings 🦀❤️
@@ -25,9 +24,9 @@ You will need to have Rust installed. You can get it by visiting https://rustup.
 Just run:
 
 ```bash
-curl -L https://git.io/rustlings | bash
+curl -L https://git.io/install-rustlings | bash
 # Or if you want it to be installed to a different path:
-curl -L https://git.io/rustlings | bash -s mypath/
+curl -L https://git.io/install-rustlings | bash -s mypath/
 ```
 
 This will install Rustlings and give you access to the `rustlings` command. Run it to get started!
@@ -43,7 +42,7 @@ Set-ExecutionPolicy RemoteSigned
 Then, you can run:
 
 ```ps
-Start-BitsTransfer -Source https://git.io/rustlings-win -Destination $env:TMP/install_rustlings.ps1; Unblock-File $env:TMP/install_rustlings.ps1; Invoke-Expression $env:TMP/install_rustlings.ps1
+Start-BitsTransfer -Source https://git.io/JTL5v -Destination $env:TMP/install_rustlings.ps1; Unblock-File $env:TMP/install_rustlings.ps1; Invoke-Expression $env:TMP/install_rustlings.ps1
 ```
 
 To install Rustlings. Same as on MacOS/Linux, you will have access to the `rustlings` command after it.
@@ -112,13 +111,6 @@ After every couple of sections, there will be a quiz that'll test your knowledge
 ## Continuing On
 
 Once you've completed Rustlings, put your new knowledge to good use! Continue practicing your Rust skills by building your own projects, contributing to Rustlings, or finding other open-source projects to contribute to.
-
-If you'd like to uninstall Rustlings, you can do so by invoking cargo and removing the rustlings directory:
-
-```bash
-cargo uninstall rustlings
-rm -r rustlings/ # or on Windows: rmdir /s rustlings
-```
 
 ## Uninstalling Rustlings
 
@@ -257,6 +249,21 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/seancad"><img src="https://avatars1.githubusercontent.com/u/47405611?v=4?s=100" width="100px;" alt=""/><br /><sub><b>seancad</b></sub></a><br /><a href="#maintenance-seancad" title="Maintenance">🚧</a></td>
     <td align="center"><a href="http://willhayworth.com"><img src="https://avatars3.githubusercontent.com/u/181174?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Will Hayworth</b></sub></a><br /><a href="#content-wsh" title="Content">🖋</a></td>
     <td align="center"><a href="https://github.com/chrizel"><img src="https://avatars3.githubusercontent.com/u/20802?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Christian Zeller</b></sub></a><br /><a href="#content-chrizel" title="Content">🖋</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/jfchevrette"><img src="https://avatars.githubusercontent.com/u/3001?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jean-Francois Chevrette</b></sub></a><br /><a href="#content-jfchevrette" title="Content">🖋</a> <a href="https://github.com/rust-lang/rustlings/commits?author=jfchevrette" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/jbaber"><img src="https://avatars.githubusercontent.com/u/1908117?v=4?s=100" width="100px;" alt=""/><br /><sub><b>John Baber-Lucero</b></sub></a><br /><a href="#content-jbaber" title="Content">🖋</a></td>
+    <td align="center"><a href="https://github.com/tal-zvon"><img src="https://avatars.githubusercontent.com/u/3195851?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tal</b></sub></a><br /><a href="#content-tal-zvon" title="Content">🖋</a></td>
+    <td align="center"><a href="https://github.com/apogeeoak"><img src="https://avatars.githubusercontent.com/u/59737221?v=4?s=100" width="100px;" alt=""/><br /><sub><b>apogeeoak</b></sub></a><br /><a href="#content-apogeeoak" title="Content">🖋</a> <a href="https://github.com/rust-lang/rustlings/commits?author=apogeeoak" title="Code">💻</a></td>
+    <td align="center"><a href="http://www.garfieldtech.com/"><img src="https://avatars.githubusercontent.com/u/254863?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Larry Garfield</b></sub></a><br /><a href="#content-Crell" title="Content">🖋</a></td>
+    <td align="center"><a href="https://github.com/circumspect"><img src="https://avatars.githubusercontent.com/u/40770208?v=4?s=100" width="100px;" alt=""/><br /><sub><b>circumspect</b></sub></a><br /><a href="#content-circumspect" title="Content">🖋</a></td>
+    <td align="center"><a href="https://github.com/cjwyett"><img src="https://avatars.githubusercontent.com/u/34195737?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Cyrus Wyett</b></sub></a><br /><a href="#content-cjwyett" title="Content">🖋</a></td>
+    <td align="center"><a href="https://github.com/cadolphs"><img src="https://avatars.githubusercontent.com/u/13894820?v=4?s=100" width="100px;" alt=""/><br /><sub><b>cadolphs</b></sub></a><br /><a href="https://github.com/rust-lang/rustlings/commits?author=cadolphs" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://www.haveneer.com"><img src="https://avatars.githubusercontent.com/u/26146722?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Pascal H.</b></sub></a><br /><a href="#content-hpwxf" title="Content">🖋</a></td>
+    <td align="center"><a href="https://twitter.com/chapeupreto"><img src="https://avatars.githubusercontent.com/u/834048?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rod Elias</b></sub></a><br /><a href="#content-chapeupreto" title="Content">🖋</a></td>
+    <td align="center"><a href="https://github.com/blerchy"><img src="https://avatars.githubusercontent.com/u/2555355?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Matt Lebl</b></sub></a><br /><a href="https://github.com/rust-lang/rustlings/commits?author=blerchy" title="Code">💻</a></td>
   </tr>
 </table>
 
