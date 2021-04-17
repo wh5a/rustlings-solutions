@@ -3,6 +3,7 @@
 // instead of the target type itself.
 // You can read more about it at https://doc.rust-lang.org/std/convert/trait.TryFrom.html
 use std::convert::{TryFrom, TryInto};
+use std::error;
 
 #[derive(Debug, PartialEq)]
 struct Color {
@@ -22,7 +23,7 @@ struct Color {
 
 // Tuple implementation
 impl TryFrom<(i16, i16, i16)> for Color {
-    type Error = String;
+    type Error = Box<dyn error::Error>;
     fn try_from(tuple: (i16, i16, i16)) -> Result<Self, Self::Error> {
         let (r, g, b) = tuple;
         let rgb = (u8::try_from(r), u8::try_from(g), u8::try_from(b));
@@ -36,7 +37,7 @@ impl TryFrom<(i16, i16, i16)> for Color {
 
 // Array implementation
 impl TryFrom<[i16; 3]> for Color {
-    type Error = String;
+    type Error = Box<dyn error::Error>;
     fn try_from(arr: [i16; 3]) -> Result<Self, Self::Error> {
         let [r, g, b] = arr;
         (r, g, b).try_into()
@@ -45,7 +46,7 @@ impl TryFrom<[i16; 3]> for Color {
 
 // Slice implementation
 impl TryFrom<&[i16]> for Color {
-    type Error = String;
+    type Error = Box<dyn error::Error>;
     fn try_from(slice: &[i16]) -> Result<Self, Self::Error> {
         match slice {
             [r, g, b] => Color::try_from((*r, *g, *b)),
@@ -90,41 +91,43 @@ mod tests {
     }
     #[test]
     fn test_tuple_correct() {
-        let c: Result<Color, String> = (183, 65, 14).try_into();
+        let c: Result<Color, _> = (183, 65, 14).try_into();
+        assert!(c.is_ok());
         assert_eq!(
-            c,
-            Ok(Color {
+            c.unwrap(),
+            Color {
                 red: 183,
                 green: 65,
                 blue: 14
-            })
+            }
         );
     }
     #[test]
     fn test_array_out_of_range_positive() {
-        let c: Result<Color, String> = [1000, 10000, 256].try_into();
+        let c: Result<Color, _> = [1000, 10000, 256].try_into();
         assert!(c.is_err());
     }
     #[test]
     fn test_array_out_of_range_negative() {
-        let c: Result<Color, String> = [-10, -256, -1].try_into();
+        let c: Result<Color, _> = [-10, -256, -1].try_into();
         assert!(c.is_err());
     }
     #[test]
     fn test_array_sum() {
-        let c: Result<Color, String> = [-1, 255, 255].try_into();
+        let c: Result<Color, _> = [-1, 255, 255].try_into();
         assert!(c.is_err());
     }
     #[test]
     fn test_array_correct() {
-        let c: Result<Color, String> = [183, 65, 14].try_into();
+        let c: Result<Color, _> = [183, 65, 14].try_into();
+        assert!(c.is_ok());
         assert_eq!(
-            c,
-            Ok(Color {
+            c.unwrap(),
+            Color {
                 red: 183,
                 green: 65,
                 blue: 14
-            })
+            }
         );
     }
     #[test]
@@ -145,14 +148,15 @@ mod tests {
     #[test]
     fn test_slice_correct() {
         let v = vec![183, 65, 14];
-        let c: Result<Color, String> = Color::try_from(&v[..]);
+        let c: Result<Color, _> = Color::try_from(&v[..]);
+        assert!(c.is_ok());
         assert_eq!(
-            c,
-            Ok(Color {
+            c.unwrap(),
+            Color {
                 red: 183,
                 green: 65,
                 blue: 14
-            })
+            }
         );
     }
     #[test]
