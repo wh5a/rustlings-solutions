@@ -26,11 +26,7 @@ impl TryFrom<(i16, i16, i16)> for Color {
     type Error = Box<dyn error::Error>;
     fn try_from(tuple: (i16, i16, i16)) -> Result<Self, Self::Error> {
         let (r, g, b) = tuple;
-        let rgb = (u8::try_from(r), u8::try_from(g), u8::try_from(b));
-        let (red, green, blue) = match rgb {
-            (Ok(r), Ok(g), Ok(b)) => (r, g, b),
-            _ => return Err(String::from("Out of bounds"))
-        };
+        let (red, green, blue) = (u8::try_from(r)?, u8::try_from(g)?, u8::try_from(b)?);
         Ok(Color{red, green, blue})
     }
 }
@@ -50,7 +46,7 @@ impl TryFrom<&[i16]> for Color {
     fn try_from(slice: &[i16]) -> Result<Self, Self::Error> {
         match slice {
             [r, g, b] => Color::try_from((*r, *g, *b)),
-            _ => Err(String::from("Wrong slice size"))
+            _ => Err("Wrong slice size")?
         }
     }
 }

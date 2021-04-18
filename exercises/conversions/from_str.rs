@@ -27,14 +27,11 @@ impl FromStr for Person {
         let mut iter = s.split(',');
         let name = String::from(iter.next().unwrap());
         if name.is_empty() {
-            return Err(String::from("Empty string"))
+            Err("Empty string")?
         };
-        let age = match iter.next().ok_or("No age part")?.parse::<usize>() {
-            Ok(x) => x,
-            Err(_) => return Err("blah".into()),
-        };
+        let age = iter.next().ok_or("No age part")?.parse::<usize>()?;
         if let Some(x) = iter.next() {
-            return Err("blah".into())
+            Err("No trailing string")?
         };
         Ok(Person { name, age })
     }
