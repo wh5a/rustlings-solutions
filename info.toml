@@ -679,7 +679,12 @@ to avoid creating a copy of `numbers`, you'll need to create `child_numbers`
 inside the loop but still in the main thread.
 
 `child_numbers` should be a clone of the Arc of the numbers instead of a
-thread-local copy of the numbers."""
+thread-local copy of the numbers.
+
+This is a simple exercise if you understand the underlying concepts, but if this
+is too much of a struggle, consider reading through all of Chapter 16 in the book:
+https://doc.rust-lang.org/stable/book/ch16-00-concurrency.html
+"""
 
 [[exercises]]
 name = "iterators1"
@@ -704,32 +709,35 @@ path = "exercises/standard_library_types/iterators2.rs"
 mode = "test"
 hint = """
 Step 1
-You need to call something on `first` before it can be collected
-Currently its type is `char`. Have a look at the methods that are available on that type:
+The variable `first` is a `char`. It needs to be capitalized and added to the
+remaining characters in `c` in order to return the correct `String`.
+The remaining characters in `c` can be viewed as a string slice using the
+`as_str` method.
+The documentation for `char` contains many useful methods.
 https://doc.rust-lang.org/std/primitive.char.html
 
-
 Step 2
-First you'll need to turn the Vec into an iterator
-Then you'll need to apply your function unto each item in the vector
-P.s. Don't forget to collect() at the end!
-
+Create an iterator from the slice. Transform the iterated values by applying
+the `capitalize_first` function. Remember to collect the iterator.
 
 Step 3.
-This is very similar to the previous test. The only real change is that you will need to
-alter the type that collect is coerced into. For a bonus you could try doing this with a
-turbofish"""
+This is surprising similar to the previous solution. Collect is very powerful
+and very general. Rust just needs to know the desired type."""
 
 [[exercises]]
 name = "iterators3"
 path = "exercises/standard_library_types/iterators3.rs"
 mode = "test"
 hint = """
-Minor hint: In each of the two cases in the match in main, you can create x with either
-a 'turbofish' or by hinting the type of x to the compiler. You may try both.
+The divide function needs to return the correct error when even division is not
+possible.
 
-Major hint: Have a look at the Iter trait and at the explanation of its collect function.
-Especially the part about Result is interesting."""
+The division_results variable needs to be collected into a collection type.
+
+The result_with_list function needs to return a single Result where the success
+case is a vector of integers and the failure case is a DivisionError.
+
+The list_of_results function needs to return a vector of results."""
 
 [[exercises]]
 name = "iterators4"
@@ -740,6 +748,22 @@ In an imperative language, you might write a for loop that updates
 a mutable variable. Or, you might write code utilizing recursion
 and a match clause. In Rust you can take another functional
 approach, computing the factorial elegantly with ranges and iterators."""
+
+[[exercises]]
+name = "iterators5"
+path = "exercises/standard_library_types/iterators5.rs"
+mode = "test"
+hint = """
+The documentation for the std::iter::Iterator trait contains numerous methods
+that would be helpful here.
+
+Return 0 from count_collection_iterator to make the code compile in order to
+test count_iterator.
+
+The collection variable in count_collection_iterator is a slice of HashMaps. It
+needs to be converted into an iterator in order to use the iterator methods.
+
+The fold method can be useful in the count_collection_iterator function."""
 
 # THREADS
 

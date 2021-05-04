@@ -1,5 +1,5 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-85-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-92-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 # rustlings 🦀❤️
@@ -33,7 +33,7 @@ This will install Rustlings and give you access to the `rustlings` command. Run 
 
 ## Windows
 
-In PowerShell, set `ExecutionPolicy` to `RemoteSigned`:
+In PowerShell (Run as Administrator), set `ExecutionPolicy` to `RemoteSigned`:
 
 ```ps
 Set-ExecutionPolicy RemoteSigned
@@ -62,7 +62,7 @@ Basically: Clone the repository, checkout to the latest tag, run `cargo install`
 ```bash
 git clone https://github.com/rust-lang/rustlings
 cd rustlings
-git checkout tags/4.3.0 # or whatever the latest version is (find out at https://github.com/rust-lang/rustlings/releases/latest)
+git checkout tags/4.4.0 # or whatever the latest version is (find out at https://github.com/rust-lang/rustlings/releases/latest)
 cargo install --force --path .
 ```
 
@@ -102,6 +102,11 @@ exercise:
 
 ``` bash
 rustlings hint myExercise1
+```
+
+To check your progress, you can run the following command:
+```bash
+rustlings list
 ```
 
 ## Testing yourself
@@ -266,6 +271,15 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/blerchy"><img src="https://avatars.githubusercontent.com/u/2555355?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Matt Lebl</b></sub></a><br /><a href="https://github.com/rust-lang/rustlings/commits?author=blerchy" title="Code">💻</a></td>
     <td align="center"><a href="http://flakolefluk.dev"><img src="https://avatars.githubusercontent.com/u/11986564?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ignacio Le Fluk</b></sub></a><br /><a href="#content-flakolefluk" title="Content">🖋</a></td>
     <td align="center"><a href="https://github.com/tlyu"><img src="https://avatars.githubusercontent.com/u/431873?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Taylor Yu</b></sub></a><br /><a href="https://github.com/rust-lang/rustlings/commits?author=tlyu" title="Code">💻</a> <a href="#content-tlyu" title="Content">🖋</a></td>
+    <td align="center"><a href="https://zerotask.github.io"><img src="https://avatars.githubusercontent.com/u/20150243?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Patrick Hintermayer</b></sub></a><br /><a href="https://github.com/rust-lang/rustlings/commits?author=Zerotask" title="Code">💻</a></td>
+    <td align="center"><a href="https://petkopavlovski.com/"><img src="https://avatars.githubusercontent.com/u/32264020?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Pete Pavlovski</b></sub></a><br /><a href="#content-arthas168" title="Content">🖋</a></td>
+    <td align="center"><a href="https://github.com/k12ish"><img src="https://avatars.githubusercontent.com/u/45272873?v=4?s=100" width="100px;" alt=""/><br /><sub><b>k12ish</b></sub></a><br /><a href="#content-k12ish" title="Content">🖋</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/hongshaoyang"><img src="https://avatars.githubusercontent.com/u/19281800?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Shao Yang Hong</b></sub></a><br /><a href="#content-hongshaoyang" title="Content">🖋</a></td>
+    <td align="center"><a href="https://github.com/bmacer"><img src="https://avatars.githubusercontent.com/u/13931806?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Brandon Macer</b></sub></a><br /><a href="#content-bmacer" title="Content">🖋</a></td>
+    <td align="center"><a href="https://github.com/stoiandan"><img src="https://avatars.githubusercontent.com/u/10388612?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Stoian Dan</b></sub></a><br /><a href="#content-stoiandan" title="Content">🖋</a></td>
+    <td align="center"><a href="https://about.me/pjdelport"><img src="https://avatars.githubusercontent.com/u/630271?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Pi Delport</b></sub></a><br /><a href="#content-PiDelport" title="Content">🖋</a></td>
   </tr>
 </table>
 

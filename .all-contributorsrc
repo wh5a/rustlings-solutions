@@ -793,6 +793,69 @@
         "code",
         "content"
       ]
+    },
+    {
+      "login": "Zerotask",
+      "name": "Patrick Hintermayer",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20150243?v=4",
+      "profile": "https://zerotask.github.io",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "arthas168",
+      "name": "Pete Pavlovski",
+      "avatar_url": "https://avatars.githubusercontent.com/u/32264020?v=4",
+      "profile": "https://petkopavlovski.com/",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "k12ish",
+      "name": "k12ish",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45272873?v=4",
+      "profile": "https://github.com/k12ish",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "hongshaoyang",
+      "name": "Shao Yang Hong",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19281800?v=4",
+      "profile": "https://github.com/hongshaoyang",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "bmacer",
+      "name": "Brandon Macer",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13931806?v=4",
+      "profile": "https://github.com/bmacer",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "stoiandan",
+      "name": "Stoian Dan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10388612?v=4",
+      "profile": "https://github.com/stoiandan",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "PiDelport",
+      "name": "Pi Delport",
+      "avatar_url": "https://avatars.githubusercontent.com/u/630271?v=4",
+      "profile": "https://about.me/pjdelport",
+      "contributions": [
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 8,
