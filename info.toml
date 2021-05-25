@@ -210,6 +210,21 @@ So the end goal is to:
    - since we're not creating a new vec in `main` anymore, we need to create
      a new vec in `fill_vec`, similarly to the way we did in `main`"""
 
+[[exercises]]
+name = "move_semantics5"
+path = "exercises/move_semantics/move_semantics5.rs"
+mode = "compile"
+hint = """
+Carefully reason about the range in which each mutable reference is in
+vogue. Does it help to update the value of referent (x) immediately after
+the mutable reference is taken? Read more about 'Mutable References'
+in the book's section References and Borrowing':
+https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html#mutable-references.
+
+Additional hint:
+If you can't add, change, or remove any statements in `main()`, can you
+reorder them in a way that lets the program compile?"""
+
 # PRIMITIVE TYPES
 
 [[exercises]]
@@ -579,6 +594,16 @@ Also see Option::flatten
 """
 
 [[exercises]]
+name = "option3"
+path = "exercises/option/option3.rs"
+mode = "compile"
+hint = """
+The compiler says a partial move happened in the `match`
+statement. How can this be avoided? The compiler shows the correction
+needed. After making the correction as suggested by the compiler, do
+read: https://doc.rust-lang.org/std/keyword.ref.html"""
+
+[[exercises]]
 name = "result1"
 path = "exercises/error_handling/result1.rs"
 mode = "test"
@@ -893,7 +918,19 @@ path = "exercises/conversions/try_from_into.rs"
 mode = "test"
 hint = """
 Follow the steps provided right before the `TryFrom` implementation.
-You can also use the example at https://doc.rust-lang.org/std/convert/trait.TryFrom.html"""
+You can also use the example at https://doc.rust-lang.org/std/convert/trait.TryFrom.html
+
+You might want to look back at the exercise errorsn (or its hints) to remind
+yourself about how `Box<dyn Error>` works.
+
+If you're trying to return a string as an error, note that neither `str`
+nor `String` implements `error::Error`. However, there is an implementation
+of `From<&str>` for `Box<dyn Error>`. This means you can use `.into()` or
+the `?` operator to convert your string into the correct error type.
+
+If you're having trouble with using the `?` operator to convert an error string,
+recall that `?` works to convert `Err(something)` into the appropriate error
+type for returning from the function."""
 
 [[exercises]]
 name = "as_ref_mut"
@@ -909,4 +946,7 @@ mode = "test"
 hint = """
 The implementation of FromStr should return an Ok with a Person object,
 or an Err with an error if the string is not valid.
-This is almost like the `try_from_into` exercise."""
+This is almost like the `try_from_into` exercise.
+
+If you're having trouble with returning the correct error type, see the
+hints for try_from_into."""
