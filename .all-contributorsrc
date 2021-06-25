@@ -866,6 +866,24 @@
         "code",
         "content"
       ]
+    },
+    {
+      "login": "kayuapi",
+      "name": "ZC",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10304328?v=4",
+      "profile": "https://github.com/kayuapi",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "hyperparabolic",
+      "name": "hyperparabolic",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12348474?v=4",
+      "profile": "https://github.com/hyperparabolic",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 8,
