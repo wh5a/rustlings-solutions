@@ -1,5 +1,5 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-95-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-98-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 # rustlings 🦀❤️
@@ -36,7 +36,7 @@ This will install Rustlings and give you access to the `rustlings` command. Run 
 In PowerShell (Run as Administrator), set `ExecutionPolicy` to `RemoteSigned`:
 
 ```ps
-Set-ExecutionPolicy RemoteSigned
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
 Then, you can run:
@@ -57,12 +57,12 @@ When you get a permission denied message then you have to exclude the directory 
 
 ## Manually
 
-Basically: Clone the repository, checkout to the latest tag, run `cargo install`.
+Basically: Clone the repository at the latest tag, run `cargo install`.
 
 ```bash
-git clone https://github.com/rust-lang/rustlings
+# find out the latest version at https://github.com/rust-lang/rustlings/releases/latest (on edit 4.4.0)
+git clone -b 4.4.0 --depth 1 https://github.com/rust-lang/rustlings
 cd rustlings
-git checkout tags/4.4.0 # or whatever the latest version is (find out at https://github.com/rust-lang/rustlings/releases/latest)
 cargo install --force --path .
 ```
 
@@ -97,11 +97,23 @@ In case you want to go by your own order, or want to only verify a single exerci
 rustlings run myExercise1
 ```
 
+Or simply use the following command to run the next unsolved exercise in the course:
+
+```bash
+rustlings run next
+```
+
 In case you get stuck, you can run the following command to get a hint for your
 exercise:
 
 ``` bash
 rustlings hint myExercise1
+```
+
+You can also get the hint for the next unsolved exercise with the following command:
+
+``` bash
+rustlings hint next
 ```
 
 To check your progress, you can run the following command:
@@ -283,6 +295,11 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/sateeshkumarb"><img src="https://avatars.githubusercontent.com/u/429263?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sateesh </b></sub></a><br /><a href="https://github.com/rust-lang/rustlings/commits?author=sateeshkumarb" title="Code">💻</a> <a href="#content-sateeshkumarb" title="Content">🖋</a></td>
     <td align="center"><a href="https://github.com/kayuapi"><img src="https://avatars.githubusercontent.com/u/10304328?v=4?s=100" width="100px;" alt=""/><br /><sub><b>ZC</b></sub></a><br /><a href="#content-kayuapi" title="Content">🖋</a></td>
     <td align="center"><a href="https://github.com/hyperparabolic"><img src="https://avatars.githubusercontent.com/u/12348474?v=4?s=100" width="100px;" alt=""/><br /><sub><b>hyperparabolic</b></sub></a><br /><a href="https://github.com/rust-lang/rustlings/commits?author=hyperparabolic" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.net4visions.at"><img src="https://avatars.githubusercontent.com/u/5228369?v=4?s=100" width="100px;" alt=""/><br /><sub><b>arlecchino</b></sub></a><br /><a href="https://github.com/rust-lang/rustlings/commits?author=kolbma" title="Documentation">📖</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://richthofen.io/"><img src="https://avatars.githubusercontent.com/u/7576730?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Richthofen</b></sub></a><br /><a href="https://github.com/rust-lang/rustlings/commits?author=jazzplato" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/cseltol"><img src="https://avatars.githubusercontent.com/u/64264529?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ivan Nerazumov</b></sub></a><br /><a href="https://github.com/rust-lang/rustlings/commits?author=cseltol" title="Documentation">📖</a></td>
   </tr>
 </table>
 

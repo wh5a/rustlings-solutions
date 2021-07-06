@@ -772,7 +772,10 @@ The division_results variable needs to be collected into a collection type.
 The result_with_list function needs to return a single Result where the success
 case is a vector of integers and the failure case is a DivisionError.
 
-The list_of_results function needs to return a vector of results."""
+The list_of_results function needs to return a vector of results.
+
+See https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.collect for how 
+the `FromIterator` trait is used in `collect()`."""
 
 [[exercises]]
 name = "iterators4"
@@ -899,7 +902,15 @@ name = "clippy1"
 path = "exercises/clippy/clippy1.rs"
 mode = "clippy"
 hint = """
-Floating point calculations are usually imprecise, so asking if two values are exactly equal is asking for trouble"""
+Not every floating point value can be represented exactly in binary values in
+memory. Take a look at the description of 
+https://doc.rust-lang.org/stable/std/primitive.f32.html
+When using the binary compare operators with floating points you won't compare
+the floating point values but the binary representation in memory. This is 
+usually not what you would like to do. 
+See the suggestions of the clippy warning in compile output and use the
+machine epsilon value...
+https://doc.rust-lang.org/stable/std/primitive.f32.html#associatedconstant.EPSILON"""
 
 [[exercises]]
 name = "clippy2"

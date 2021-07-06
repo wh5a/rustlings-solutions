@@ -884,6 +884,33 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "kolbma",
+      "name": "arlecchino",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5228369?v=4",
+      "profile": "https://www.net4visions.at",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "jazzplato",
+      "name": "Richthofen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7576730?v=4",
+      "profile": "https://richthofen.io/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "cseltol",
+      "name": "Ivan Nerazumov",
+      "avatar_url": "https://avatars.githubusercontent.com/u/64264529?v=4",
+      "profile": "https://github.com/cseltol",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 8,
