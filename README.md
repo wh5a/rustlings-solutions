@@ -1,5 +1,5 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-98-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-100-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 # rustlings 🦀❤️
@@ -60,8 +60,8 @@ When you get a permission denied message then you have to exclude the directory 
 Basically: Clone the repository at the latest tag, run `cargo install`.
 
 ```bash
-# find out the latest version at https://github.com/rust-lang/rustlings/releases/latest (on edit 4.4.0)
-git clone -b 4.4.0 --depth 1 https://github.com/rust-lang/rustlings
+# find out the latest version at https://github.com/rust-lang/rustlings/releases/latest (on edit 4.5.0)
+git clone -b 4.5.0 --depth 1 https://github.com/rust-lang/rustlings
 cd rustlings
 cargo install --force --path .
 ```
@@ -300,6 +300,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://richthofen.io/"><img src="https://avatars.githubusercontent.com/u/7576730?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Richthofen</b></sub></a><br /><a href="https://github.com/rust-lang/rustlings/commits?author=jazzplato" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/cseltol"><img src="https://avatars.githubusercontent.com/u/64264529?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ivan Nerazumov</b></sub></a><br /><a href="https://github.com/rust-lang/rustlings/commits?author=cseltol" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/lauralindzey"><img src="https://avatars.githubusercontent.com/u/65185744?v=4?s=100" width="100px;" alt=""/><br /><sub><b>lauralindzey</b></sub></a><br /><a href="https://github.com/rust-lang/rustlings/commits?author=lauralindzey" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/sinharaksh1t"><img src="https://avatars.githubusercontent.com/u/28585848?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rakshit Sinha</b></sub></a><br /><a href="#content-sinharaksh1t" title="Content">🖋</a></td>
   </tr>
 </table>
 
