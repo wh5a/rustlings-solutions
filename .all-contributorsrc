@@ -984,6 +984,42 @@
       "contributions": [
         "content"
       ]
+    },
+    {
+      "login": "abusch",
+      "name": "Antoine Büsch",
+      "avatar_url": "https://avatars.githubusercontent.com/u/506344?v=4",
+      "profile": "https://github.com/abusch",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "frogtd",
+      "name": "frogtd",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31412003?v=4",
+      "profile": "https://frogtd.com/",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "EmisonLu",
+      "name": "Zhenghao Lu",
+      "avatar_url": "https://avatars.githubusercontent.com/u/54395432?v=4",
+      "profile": "https://github.com/EmisonLu",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "fredr",
+      "name": "Fredrik Enestad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/762956?v=4",
+      "profile": "https://soundtrackyourbrand.com",
+      "contributions": [
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 8,
