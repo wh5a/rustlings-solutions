@@ -32,46 +32,33 @@ enum IntoColorError {
 
 // Tuple implementation
 impl TryFrom<(i16, i16, i16)> for Color {
-<<<<<<< HEAD
-    type Error = Box<dyn error::Error>;
-    fn try_from(tuple: (i16, i16, i16)) -> Result<Self, Self::Error> {
-        let (r, g, b) = tuple;
-        let (red, green, blue) = (u8::try_from(r)?, u8::try_from(g)?, u8::try_from(b)?);
-        Ok(Color{red, green, blue})
-=======
     type Error = IntoColorError;
     fn try_from(tuple: (i16, i16, i16)) -> Result<Self, Self::Error> {
->>>>>>> upstream/main
+        let (r, g, b) = tuple;
+        let (red, green, blue) = (u8::try_from(r).or(Err(IntoColorError::IntConversion))?,
+	    	  	       	  u8::try_from(g).or(Err(IntoColorError::IntConversion))?,
+				  u8::try_from(b).or(Err(IntoColorError::IntConversion))?);
+        Ok(Color{red, green, blue})
     }
 }
 
 // Array implementation
 impl TryFrom<[i16; 3]> for Color {
-<<<<<<< HEAD
-    type Error = Box<dyn error::Error>;
+    type Error = IntoColorError;
     fn try_from(arr: [i16; 3]) -> Result<Self, Self::Error> {
         let [r, g, b] = arr;
         (r, g, b).try_into()
-=======
-    type Error = IntoColorError;
-    fn try_from(arr: [i16; 3]) -> Result<Self, Self::Error> {
->>>>>>> upstream/main
     }
 }
 
 // Slice implementation
 impl TryFrom<&[i16]> for Color {
-<<<<<<< HEAD
-    type Error = Box<dyn error::Error>;
+    type Error = IntoColorError;
     fn try_from(slice: &[i16]) -> Result<Self, Self::Error> {
         match slice {
             [r, g, b] => Color::try_from((*r, *g, *b)),
-            _ => Err("Wrong slice size")?
+            _ => Err(IntoColorError::BadLen)?
         }
-=======
-    type Error = IntoColorError;
-    fn try_from(slice: &[i16]) -> Result<Self, Self::Error> {
->>>>>>> upstream/main
     }
 }
 
