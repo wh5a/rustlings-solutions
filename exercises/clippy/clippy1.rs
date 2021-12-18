@@ -6,10 +6,16 @@
 // check clippy's suggestions from the output to solve the exercise.
 // Execute `rustlings hint clippy1` for hints :)
 
+use std::f32;
+
 fn main() {
-    let x = 1.2331f64;
-    let y = 1.2332f64;
-    if (y - x).abs() > f64::EPSILON {
-        println!("Success!");
-    }
+    let pi = 3.14f32;
+    let radius = 5.00f32;
+
+    let area = pi * f32::powi(radius, 2);
+
+    println!(
+        "The area of a circle with radius {:.2} is {:.5}!",
+        radius, area
+    )
 }
