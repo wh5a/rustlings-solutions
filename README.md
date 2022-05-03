@@ -21,9 +21,9 @@ You will need to have Rust installed. You can get it by visiting https://rustup.
 Just run:
 
 ```bash
-curl -L https://git.io/install-rustlings | bash
+curl -L https://raw.githubusercontent.com/rust-lang/rustlings/main/install.sh | bash
 # Or if you want it to be installed to a different path:
-curl -L https://git.io/install-rustlings | bash -s mypath/
+curl -L https://raw.githubusercontent.com/rust-lang/rustlings/main/install.sh | bash -s mypath/
 ```
 
 This will install Rustlings and give you access to the `rustlings` command. Run it to get started!
@@ -39,7 +39,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Then, you can run:
 
 ```ps1
-Start-BitsTransfer -Source https://git.io/JTL5v -Destination $env:TMP/install_rustlings.ps1; Unblock-File $env:TMP/install_rustlings.ps1; Invoke-Expression $env:TMP/install_rustlings.ps1
+Start-BitsTransfer -Source https://raw.githubusercontent.com/rust-lang/rustlings/main/install.ps1 -Destination $env:TMP/install_rustlings.ps1; Unblock-File $env:TMP/install_rustlings.ps1; Invoke-Expression $env:TMP/install_rustlings.ps1
 ```
 
 To install Rustlings. Same as on MacOS/Linux, you will have access to the `rustlings` command after it.
@@ -57,8 +57,8 @@ When you get a permission denied message then you have to exclude the directory 
 Basically: Clone the repository at the latest tag, run `cargo install`.
 
 ```bash
-# find out the latest version at https://github.com/rust-lang/rustlings/releases/latest (on edit 4.6.0)
-git clone -b 4.6.0 --depth 1 https://github.com/rust-lang/rustlings
+# find out the latest version at https://github.com/rust-lang/rustlings/releases/latest (on edit 4.7.1)
+git clone -b 4.7.1 --depth 1 https://github.com/rust-lang/rustlings
 cd rustlings
 cargo install --force --path .
 ```
@@ -123,6 +123,27 @@ rustlings list
 ## Testing yourself
 
 After every couple of sections, there will be a quiz that'll test your knowledge on a bunch of sections at once. These quizzes are found in `exercises/quizN.rs`.
+
+## Enabling `rust-analyzer`
+
+`rust-analyzer` support is provided, but it depends on your editor
+whether it's enabled by default. (RLS support is not provided)
+
+To enable `rust-analyzer`, you'll need to make Cargo build the project
+with the `exercises` feature, which will automatically include the `exercises/`
+subfolder in the project. The easiest way to do this is to tell your editor to
+build the project with all features (the equivalent of `cargo build --all-features`).
+For specific editor instructions:
+
+- **VSCode**: Add a `.vscode/settings.json` file with the following:
+```json
+{
+    "rust-analyzer.cargo.features": ["exercises"]
+}
+```
+- **IntelliJ-based Editors**: Using the Rust plugin, everything should work
+    by default.
+- _Missing your editor? Feel free to contribute more instructions!_
 
 ## Continuing On
 

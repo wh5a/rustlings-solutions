@@ -30,12 +30,7 @@ fn main() {
     for offset in 0..8 {
         let child_numbers = Arc::clone(&shared_numbers);
         joinhandles.push(thread::spawn(move || {
-            let mut i = offset;
-            let mut sum = 0;
-            while i < child_numbers.len() {
-                sum += child_numbers[i];
-                i += 8;
-            }
+            let sum: u32 = child_numbers.iter().filter(|n| *n % 8 == offset).sum();
             println!("Sum of offset {} is {}", offset, sum);
         }));
     }
