@@ -1236,6 +1236,42 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "klkl0808",
+      "name": "Konstantin",
+      "avatar_url": "https://avatars.githubusercontent.com/u/24694249?v=4",
+      "profile": "https://github.com/klkl0808",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "0pling",
+      "name": "0pling",
+      "avatar_url": "https://avatars.githubusercontent.com/u/104090344?v=4",
+      "profile": "https://github.com/0pling",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "KatanaFluorescent",
+      "name": "KatanaFluorescent",
+      "avatar_url": "https://avatars.githubusercontent.com/u/60199077?v=4",
+      "profile": "https://github.com/KatanaFluorescent",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Drew-Morris",
+      "name": "Drew Morris",
+      "avatar_url": "https://avatars.githubusercontent.com/u/95818166?v=4",
+      "profile": "https://github.com/Drew-Morris",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 8,
