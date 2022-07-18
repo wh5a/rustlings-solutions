@@ -3,11 +3,12 @@
 // Execute `rustlings hint structs1` or use the `hint` watch subcommand for a hint.
 
 struct ColorClassicStruct {
-    name: String,
-    hex: String,
+    red: u8,
+    green: u8,
+    blue: u8,
 }
 
-struct ColorTupleStruct(String, String);
+struct ColorTupleStruct(u8, u8, u8);
 
 #[derive(Debug)]
 struct UnitLikeStruct;
@@ -19,7 +20,7 @@ mod tests {
     #[test]
     fn classic_c_structs() {
         // TODO: Instantiate a classic c struct!
-        let green = ColorClassicStruct { name: String::from("green"), hex: String::from("#00FF00") };
+        let green = ColorClassicStruct { red: 0, green: 255, blue: 0 };
 
         assert_eq!(green.red, 0);
         assert_eq!(green.green, 255);
@@ -29,7 +30,7 @@ mod tests {
     #[test]
     fn tuple_structs() {
         // TODO: Instantiate a tuple struct!
-        let green = ColorTupleStruct(String::from("green"), String::from("#00FF00"));
+        let green = ColorTupleStruct(0, 255, 0);
 
         assert_eq!(green.0, 0);
         assert_eq!(green.1, 255);
