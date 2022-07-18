@@ -1,5 +1,5 @@
-// option2.rs
-// Make me compile! Execute `rustlings hint option2` for hints
+// options2.rs
+// Execute `rustlings hint options2` or use the `hint` watch subcommand for a hint.
 
 fn main() {
     let optional_word = Some(String::from("rustlings"));

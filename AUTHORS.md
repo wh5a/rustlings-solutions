@@ -182,6 +182,20 @@ authors.
   <tr>
     <td align="center"><a href="https://github.com/KatanaFluorescent"><img src="https://avatars.githubusercontent.com/u/60199077?v=4?s=100" width="100px;" alt=""/><br /><sub><b>KatanaFluorescent</b></sub></a><br /><a href="https://github.com/rust-lang/rustlings/commits?author=KatanaFluorescent" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Drew-Morris"><img src="https://avatars.githubusercontent.com/u/95818166?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Drew Morris</b></sub></a><br /><a href="https://github.com/rust-lang/rustlings/commits?author=Drew-Morris" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/camperdue42"><img src="https://avatars.githubusercontent.com/u/43047763?v=4?s=100" width="100px;" alt=""/><br /><sub><b>camperdue42</b></sub></a><br /><a href="#content-camperdue42" title="Content">🖋</a></td>
+    <td align="center"><a href="https://github.com/YsuOS"><img src="https://avatars.githubusercontent.com/u/30138661?v=4?s=100" width="100px;" alt=""/><br /><sub><b>YsuOS</b></sub></a><br /><a href="#content-YsuOS" title="Content">🖋</a></td>
+    <td align="center"><a href="https://lichess.org/@/StevenEmily"><img src="https://avatars.githubusercontent.com/u/58114641?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Steven Nguyen</b></sub></a><br /><a href="#content-icecream17" title="Content">🖋</a></td>
+    <td align="center"><a href="https://noahcairns.dev"><img src="https://avatars.githubusercontent.com/u/94420090?v=4?s=100" width="100px;" alt=""/><br /><sub><b>nacairns1</b></sub></a><br /><a href="#content-nacairns1" title="Content">🖋</a></td>
+    <td align="center"><a href="https://github.com/pgjbz"><img src="https://avatars.githubusercontent.com/u/22059237?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Paulo Gabriel Justino Bezerra</b></sub></a><br /><a href="#content-pgjbz" title="Content">🖋</a></td>
+    <td align="center"><a href="https://github.com/jaystile"><img src="https://avatars.githubusercontent.com/u/46078028?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jason</b></sub></a><br /><a href="#content-jaystile" title="Content">🖋</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://exdx.github.io"><img src="https://avatars.githubusercontent.com/u/31546601?v=4?s=100" width="100px;" alt=""/><br /><sub><b>exdx</b></sub></a><br /><a href="#content-exdx" title="Content">🖋</a></td>
+    <td align="center"><a href="https://github.com/Jzow"><img src="https://avatars.githubusercontent.com/u/68860495?v=4?s=100" width="100px;" alt=""/><br /><sub><b>James Zow</b></sub></a><br /><a href="#content-Jzow" title="Content">🖋</a></td>
+    <td align="center"><a href="https://jamesabromley.wordpress.com/"><img src="https://avatars.githubusercontent.com/u/2474334?v=4?s=100" width="100px;" alt=""/><br /><sub><b>James Bromley</b></sub></a><br /><a href="#content-jayber" title="Content">🖋</a></td>
+    <td align="center"><a href="https://github.com/swhiteCQC"><img src="https://avatars.githubusercontent.com/u/77438466?v=4?s=100" width="100px;" alt=""/><br /><sub><b>swhiteCQC</b></sub></a><br /><a href="#content-swhiteCQC" title="Content">🖋</a></td>
+    <td align="center"><a href="https://github.com/neilpate"><img src="https://avatars.githubusercontent.com/u/7802334?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Neil Pate</b></sub></a><br /><a href="#content-neilpate" title="Content">🖋</a></td>
+    <td align="center"><a href="https://wojexe.com"><img src="https://avatars.githubusercontent.com/u/21208490?v=4?s=100" width="100px;" alt=""/><br /><sub><b>wojexe</b></sub></a><br /><a href="#content-wojexe" title="Content">🖋</a></td>
   </tr>
 </table>
 

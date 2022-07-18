@@ -1,4 +1,4 @@
-// hashmap2.rs
+// hashmaps2.rs
 
 // A basket of fruits in the form of a hash map is given. The key
 // represents the name of the fruit and the value represents how many
@@ -9,8 +9,7 @@
 //
 // Make me pass the tests!
 //
-// Execute the command `rustlings hint hashmap2` if you need
-// hints.
+// Execute `rustlings hint hashmaps2` or use the `hint` watch subcommand for a hint.
 
 use std::collections::HashMap;
 
