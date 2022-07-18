@@ -218,3 +218,12 @@ fn run_rustlings_list_without_done() {
         .success()
         .stdout(predicates::str::contains("Done").not());
 }
+
+#[test]
+fn all_exercises_done() {
+    Command::cargo_bin("rustlings")
+        .unwrap()
+        .arg("verify")
+        .assert()
+        .success();
+}
