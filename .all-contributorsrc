@@ -1398,6 +1398,60 @@
       "contributions": [
         "content"
       ]
+    },
+    {
+      "login": "EdwinChang24",
+      "name": "Edwin Chang",
+      "avatar_url": "https://avatars.githubusercontent.com/u/88263098?v=4",
+      "profile": "http://edwinchang.vercel.app",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "saikatdas0790",
+      "name": "Saikat Das",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7412443?v=4",
+      "profile": "https://saikat.dev/",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "thatlittleboy",
+      "name": "Jeremy Goh",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30731072?v=4",
+      "profile": "https://github.com/thatlittleboy",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "Lioness100",
+      "name": "Lioness100",
+      "avatar_url": "https://avatars.githubusercontent.com/u/65814829?v=4",
+      "profile": "https://github.com/Lioness100",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "tvkn",
+      "name": "Tristan Nicholls",
+      "avatar_url": "https://avatars.githubusercontent.com/u/79277926?v=4",
+      "profile": "https://github.com/tvkn",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "clairew",
+      "name": "Claire",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9344258?v=4",
+      "profile": "http://clairewang.net",
+      "contributions": [
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 8,
