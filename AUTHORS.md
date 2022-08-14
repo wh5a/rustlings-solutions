@@ -206,6 +206,12 @@ authors.
     <td align="center"><a href="https://github.com/Lioness100"><img src="https://avatars.githubusercontent.com/u/65814829?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Lioness100</b></sub></a><br /><a href="#content-Lioness100" title="Content">🖋</a></td>
     <td align="center"><a href="https://github.com/tvkn"><img src="https://avatars.githubusercontent.com/u/79277926?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tristan Nicholls</b></sub></a><br /><a href="#content-tvkn" title="Content">🖋</a></td>
     <td align="center"><a href="http://clairewang.net"><img src="https://avatars.githubusercontent.com/u/9344258?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Claire</b></sub></a><br /><a href="#content-clairew" title="Content">🖋</a></td>
+    <td align="center"><a href="https://github.com/Mouwrice"><img src="https://avatars.githubusercontent.com/u/56763273?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Maurice Van Wassenhove</b></sub></a><br /><a href="#content-Mouwrice" title="Content">🖋</a></td>
+    <td align="center"><a href="http://jmthree.com"><img src="https://avatars.githubusercontent.com/u/77524?v=4?s=100" width="100px;" alt=""/><br /><sub><b>John Mendelewski</b></sub></a><br /><a href="https://github.com/rust-lang/rustlings/commits?author=johnmendel" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="http://fakhoury.xyz"><img src="https://avatars.githubusercontent.com/u/20828724?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Brian Fakhoury</b></sub></a><br /><a href="#content-brianfakhoury" title="Content">🖋</a></td>
+    <td align="center"><a href="https://github.com/markusboehme"><img src="https://avatars.githubusercontent.com/u/5074759?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Markus Boehme</b></sub></a><br /><a href="https://github.com/rust-lang/rustlings/commits?author=markusboehme" title="Code">💻</a></td>
   </tr>
 </table>
 
