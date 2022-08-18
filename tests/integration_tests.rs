@@ -111,6 +111,27 @@ fn run_single_test_no_exercise() {
 }
 
 #[test]
+fn reset_single_exercise() {
+    Command::cargo_bin("rustlings")
+        .unwrap()
+        .args(&["reset", "intro1"])
+        .assert()
+        .code(0);
+}
+
+#[test]
+fn reset_no_exercise() {
+    Command::cargo_bin("rustlings")
+        .unwrap()
+        .arg("reset")
+        .assert()
+        .code(1)
+        .stderr(predicates::str::contains(
+            "positional arguments not provided",
+        ));
+}
+
+#[test]
 fn get_hint_for_single_test() {
     Command::cargo_bin("rustlings")
         .unwrap()
