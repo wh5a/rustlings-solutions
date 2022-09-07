@@ -57,8 +57,8 @@ If you get a permission denied message, you might have to exclude the directory 
 Basically: Clone the repository at the latest tag, run `cargo install --path .`.
 
 ```bash
-# find out the latest version at https://github.com/rust-lang/rustlings/releases/latest (on edit 5.1.1)
-git clone -b 5.1.1 --depth 1 https://github.com/rust-lang/rustlings
+# find out the latest version at https://github.com/rust-lang/rustlings/releases/latest (on edit 5.2.1)
+git clone -b 5.2.1 --depth 1 https://github.com/rust-lang/rustlings
 cd rustlings
 cargo install --force --path .
 ```
@@ -134,7 +134,7 @@ Once you've completed Rustlings, put your new knowledge to good use! Continue pr
 
 ## Uninstalling Rustlings
 
-If you want to remove Rustlings from your system, there's two steps. First, you'll need to remove the exercises folder that the install script created
+If you want to remove Rustlings from your system, there are two steps. First, you'll need to remove the exercises folder that the install script created
 for you:
 
 ```bash
