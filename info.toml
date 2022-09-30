@@ -627,7 +627,7 @@ propagated using `?` operators. How do we declare a return type from `main()` th
 
 Under the hood, the `?` operator calls `From::from` on the error value to convert it to a boxed
 trait object, a `Box<dyn error::Error>`. This boxed trait object is polymorphic, and since all
-errors implement the `error:Error` trait, we can capture lots of different errors in one "Box" 
+errors implement the `error::Error` trait, we can capture lots of different errors in one "Box"
 object. 
 
 Check out this section of the book:
@@ -818,9 +818,9 @@ Step 1:
 We need to apply something to the collection `my_fav_fruits` before we start to go through
 it. What could that be? Take a look at the struct definition for a vector for inspiration:
 https://doc.rust-lang.org/std/vec/struct.Vec.html.
-Step 2 & step 2.1:
+Step 2 & step 3:
 Very similar to the lines above and below. You've got this!
-Step 3:
+Step 4:
 An iterator goes through all elements in a collection, but what if we've run out of
 elements? What should we expect here? If you're stuck, take a look at
 https://doc.rust-lang.org/std/iter/trait.Iterator.html for some ideas.
@@ -969,7 +969,7 @@ https://doc.rust-lang.org/std/thread/fn.spawn.html
 
 A challenge with multi-threaded applications is that the main thread can 
 finish before the spawned threads are completed.
-https://doc.rust-lang.org/book/ch16-01-threads.html#waiting-for-all-threads-to-finish-using-join-handle
+https://doc.rust-lang.org/book/ch16-01-threads.html#waiting-for-all-threads-to-finish-using-join-handles
 
 Collect the JoinHandles and wait for them to finish.
 https://doc.rust-lang.org/std/thread/struct.JoinHandle.html
