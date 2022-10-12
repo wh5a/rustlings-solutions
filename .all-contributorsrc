@@ -1596,6 +1596,24 @@
       "contributions": [
         "content"
       ]
+    },
+    {
+      "login": "duchonic",
+      "name": "Duchoud Nicolas",
+      "avatar_url": "https://avatars.githubusercontent.com/u/34117620?v=4",
+      "profile": "https://github.com/duchonic",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "gfaugere",
+      "name": "Gaëtan Faugère",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11901979?v=4",
+      "profile": "https://github.com/gfaugere",
+      "contributions": [
+        "tool"
+      ]
     }
   ],
   "contributorsPerLine": 8,
