@@ -1614,6 +1614,33 @@
       "contributions": [
         "tool"
       ]
+    },
+    {
+      "login": "bhbuehler",
+      "name": "bhbuehler",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25541343?v=4",
+      "profile": "https://github.com/bhbuehler",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "nyurik",
+      "name": "Yuri Astrakhan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1641515?v=4",
+      "profile": "https://github.com/nyurik",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "azzamsa",
+      "name": "azzamsa",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17734314?v=4",
+      "profile": "http://azzamsa.com",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 8,
