@@ -665,7 +665,7 @@ name = "generics1"
 path = "exercises/generics/generics1.rs"
 mode = "compile"
 hint = """
-Vectors in rust make use of generics to create dynamically sized arrays of any type.
+Vectors in Rust make use of generics to create dynamically sized arrays of any type.
 You need to tell the compiler what type we are pushing onto this vector."""
 
 [[exercises]]
@@ -695,7 +695,7 @@ name = "traits2"
 path = "exercises/traits/traits2.rs"
 mode = "test"
 hint = """
-Notice how the trait takes ownership of 'self',and returns `Self'.
+Notice how the trait takes ownership of 'self',and returns `Self`.
 Try mutating the incoming string vector. Have a look at the tests to see
 what the result should look like!
 
@@ -1071,7 +1071,7 @@ path = "exercises/clippy/clippy1.rs"
 mode = "clippy"
 hint = """
 Rust stores the highest precision version of any long or inifinite precision
-mathematical constants in the rust standard library.
+mathematical constants in the Rust standard library.
 https://doc.rust-lang.org/stable/std/f32/consts/index.html
 
 We may be tempted to use our own approximations for certain mathematical constants,
