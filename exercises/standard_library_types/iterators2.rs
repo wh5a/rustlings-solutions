@@ -27,7 +27,7 @@ pub fn capitalize_words_vector(words: &[&str]) -> Vec<String> {
 // Return a single string.
 // ["hello", " ", "world"] -> "Hello World"
 pub fn capitalize_words_string(words: &[&str]) -> String {
-    words.to_owned().into_iter().map(capitalize_first).collect::<String>()
+    capitalize_words_vector(words).into_iter().collect::<String>()
 }
 
 #[cfg(test)]
