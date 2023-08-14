@@ -42,9 +42,9 @@ impl Default for Person {
 
 impl From<&str> for Person {
     fn from(s: &str) -> Person {
-        // if s.is_empty() {
-        //     Person::default()
-        // } else {
+        if s.is_empty() {
+            Person::default()
+        } else {
             let mut iter = s.split(',');
             let name = match iter.next() {
                 Some("") | None => return Person::default(),
@@ -57,11 +57,8 @@ impl From<&str> for Person {
                 },
                 None => return Person::default(),
             };
-            if let Some(x) = iter.next() {
-                return Person::default()
-            };
             Person{name, age}
-        // }
+        }
     }
 }
 
