@@ -325,6 +325,17 @@ authors.
       <td align="center" valign="top" width="12.5%"><a href="https://github.com/shirts"><img src="https://avatars.githubusercontent.com/u/4952151?v=4?s=100" width="100px;" alt="shirts"/><br /><sub><b>shirts</b></sub></a><br /><a href="#content-shirts" title="Content">🖋</a></td>
       <td align="center" valign="top" width="12.5%"><a href="https://github.com/eLVas"><img src="https://avatars.githubusercontent.com/u/6797156?v=4?s=100" width="100px;" alt="Ivan Vasiunyk"/><br /><sub><b>Ivan Vasiunyk</b></sub></a><br /><a href="#content-eLVas" title="Content">🖋</a></td>
       <td align="center" valign="top" width="12.5%"><a href="https://mo8it.com"><img src="https://avatars.githubusercontent.com/u/76752051?v=4?s=100" width="100px;" alt="Mo"/><br /><sub><b>Mo</b></sub></a><br /><a href="https://github.com/rust-lang/rustlings/commits?author=mo8it" title="Code">💻</a></td>
+      <td align="center" valign="top" width="12.5%"><a href="https://github.com/x10an14"><img src="https://avatars.githubusercontent.com/u/710608?v=4?s=100" width="100px;" alt="x10an14"/><br /><sub><b>x10an14</b></sub></a><br /><a href="#infra-x10an14" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+      <td align="center" valign="top" width="12.5%"><a href="https://github.com/gabay"><img src="https://avatars.githubusercontent.com/u/5773610?v=4?s=100" width="100px;" alt="Roi Gabay"/><br /><sub><b>Roi Gabay</b></sub></a><br /><a href="#content-gabay" title="Content">🖋</a></td>
+      <td align="center" valign="top" width="12.5%"><a href="https://github.com/mkovaxx"><img src="https://avatars.githubusercontent.com/u/481354?v=4?s=100" width="100px;" alt="Máté Kovács"/><br /><sub><b>Máté Kovács</b></sub></a><br /><a href="#content-mkovaxx" title="Content">🖋</a></td>
+      <td align="center" valign="top" width="12.5%"><a href="https://szabgab.com/"><img src="https://avatars.githubusercontent.com/u/48833?v=4?s=100" width="100px;" alt="Gábor Szabó"/><br /><sub><b>Gábor Szabó</b></sub></a><br /><a href="#content-szabgab" title="Content">🖋</a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="12.5%"><a href="https://moduslaborandi.net"><img src="https://avatars.githubusercontent.com/u/3340793?v=4?s=100" width="100px;" alt="Yamila Moreno"/><br /><sub><b>Yamila Moreno</b></sub></a><br /><a href="#content-yamila-moreno" title="Content">🖋</a></td>
+      <td align="center" valign="top" width="12.5%"><a href="https://github.com/willhack"><img src="https://avatars.githubusercontent.com/u/18036720?v=4?s=100" width="100px;" alt="Will Hack"/><br /><sub><b>Will Hack</b></sub></a><br /><a href="#content-willhack" title="Content">🖋</a></td>
+      <td align="center" valign="top" width="12.5%"><a href="http://cancompute.tech"><img src="https://avatars.githubusercontent.com/u/2052646?v=4?s=100" width="100px;" alt="Michael"/><br /><sub><b>Michael</b></sub></a><br /><a href="#content-bean5" title="Content">🖋</a></td>
+      <td align="center" valign="top" width="12.5%"><a href="https://www.sadiqpk.org"><img src="https://avatars.githubusercontent.com/u/1289514?v=4?s=100" width="100px;" alt="Mohammed Sadiq"/><br /><sub><b>Mohammed Sadiq</b></sub></a><br /><a href="#content-pksadiq" title="Content">🖋</a></td>
+      <td align="center" valign="top" width="12.5%"><a href="https://github.com/Jak-Ch-ll"><img src="https://avatars.githubusercontent.com/u/56225668?v=4?s=100" width="100px;" alt="Jakob"/><br /><sub><b>Jakob</b></sub></a><br /><a href="#content-Jak-Ch-ll" title="Content">🖋</a></td>
     </tr>
   </tbody>
 </table>

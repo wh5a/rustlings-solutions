@@ -2298,6 +2298,87 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "x10an14",
+      "name": "x10an14",
+      "avatar_url": "https://avatars.githubusercontent.com/u/710608?v=4",
+      "profile": "https://github.com/x10an14",
+      "contributions": [
+        "infra"
+      ]
+    },
+    {
+      "login": "gabay",
+      "name": "Roi Gabay",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5773610?v=4",
+      "profile": "https://github.com/gabay",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "mkovaxx",
+      "name": "Máté Kovács",
+      "avatar_url": "https://avatars.githubusercontent.com/u/481354?v=4",
+      "profile": "https://github.com/mkovaxx",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "szabgab",
+      "name": "Gábor Szabó",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48833?v=4",
+      "profile": "https://szabgab.com/",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "yamila-moreno",
+      "name": "Yamila Moreno",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3340793?v=4",
+      "profile": "https://moduslaborandi.net",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "willhack",
+      "name": "Will Hack",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18036720?v=4",
+      "profile": "https://github.com/willhack",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "bean5",
+      "name": "Michael",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2052646?v=4",
+      "profile": "http://cancompute.tech",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "pksadiq",
+      "name": "Mohammed Sadiq",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289514?v=4",
+      "profile": "https://www.sadiqpk.org",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "Jak-Ch-ll",
+      "name": "Jakob",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56225668?v=4",
+      "profile": "https://github.com/Jak-Ch-ll",
+      "contributions": [
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 8,
