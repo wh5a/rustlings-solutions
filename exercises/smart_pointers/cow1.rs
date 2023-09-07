@@ -35,7 +35,7 @@ mod tests {
         let slice = [-1, 0, 1];
         let mut input = Cow::from(&slice[..]);
         match abs_all(&mut input) {
-            Cow::Owned(_) => Ok(()),
+            Cow::Owned(vec) => Ok(assert_eq!(*vec, vec![1, 0, 1])),
             _ => Err("Expected owned value"),
         }
     }
@@ -47,7 +47,7 @@ mod tests {
         let mut input = Cow::from(&slice[..]);
         match abs_all(&mut input) {
             // TODO
-            Cow::Borrowed(_) => Ok(()),
+            Cow::Borrowed(vec) => Ok(assert_eq!(*vec, vec![0, 1, 2])),
             _ => Err("Expected borrowed value"),
         }
     }
@@ -61,7 +61,7 @@ mod tests {
         let mut input = Cow::from(slice);
         match abs_all(&mut input) {
             // TODO
-            Cow::Owned(_) => Ok(()),
+            Cow::Owned(vec) => Ok(assert_eq!(*vec, vec![0, 1, 2])),
             _ => Err("Expected owned value"),
         }
     }
@@ -72,10 +72,10 @@ mod tests {
         // case the call to `to_mut()` returns a reference to the same data as
         // before.
         let slice = vec![-1, 0, 1];
-        let mut input = Cow::from(slice).to_mut();
+        let mut input = Cow::from(slice);
         match abs_all(&mut input) {
             // TODO
-            Cow::Owned(_) => Ok(()),
+            Cow::Owned(vec) => Ok(assert_eq!(*vec, vec![1, 0, 1])),
             _ => Err("Expected owned value"),
         }
     }
