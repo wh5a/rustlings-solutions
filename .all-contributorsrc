@@ -2433,6 +2433,33 @@
       "contributions": [
         "content"
       ]
+    },
+    {
+      "login": "offbyone",
+      "name": "Chris Rose",
+      "avatar_url": "https://avatars.githubusercontent.com/u/181693?v=4",
+      "profile": "https://github.com/offbyone",
+      "contributions": [
+        "infra"
+      ]
+    },
+    {
+      "login": "dieterplex",
+      "name": "d1t2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/507502?v=4",
+      "profile": "https://github.com/dieterplex",
+      "contributions": [
+        "infra"
+      ]
+    },
+    {
+      "login": "docwilco",
+      "name": "docwilco",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66911096?v=4",
+      "profile": "https://github.com/docwilco",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 8,
