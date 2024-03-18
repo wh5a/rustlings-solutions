@@ -7,6 +7,6 @@
 // hint.
 
 fn main() {
-    let mut shopping_list: Vec<&'static str> = Vec::new();
+    let mut shopping_list = Vec::new();
     shopping_list.push("milk");
 }
