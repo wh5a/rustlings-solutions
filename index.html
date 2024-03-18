@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" id="oranda" class="dark">
+    <head>
+        <title>rustlings</title>
+        
+            <meta property="og:url" content="https://rustlings.cool" />
+        
+        
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+            <meta name="description" content="Small exercises to get you used to reading and writing Rust code!" />
+            <meta property="og:description" content="Small exercises to get you used to reading and writing Rust code!" />
+        
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="rustlings" />
+        
+        
+        
+        <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+        <link rel="stylesheet" href="/oranda-v0.3.1.css" />
+        
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-body">
+                
+                    <div class="repo_banner">
+                        <a href="https://github.com/rust-lang/rustlings">
+                            <div class="github-icon" aria-hidden="true"></div>
+                            Check out our GitHub!
+                        </a>
+                    </div>
+                
+
+                <main>
+                    <header>
+                        
+                        <h1 class="title">rustlings</h1>
+                        
+    <nav class="nav">
+        <ul>
+            <li><a href="/">Home</a></li>
+
+            
+
+            
+                <li><a href="/artifacts/">Install</a></li>
+            
+
+            
+
+            
+
+            
+                <li><a href="/changelog/">Changelog</a></li>
+            
+        </ul>
+    </nav>
+
+                    </header>
+
+                    
+
+<div class="oranda-hide">
+<h1>rustlings 🦀❤️</h1>
+</div>
+<p>Greetings and welcome to <code>rustlings</code>. This project contains small exercises to get you used to reading and writing Rust code. This includes reading and responding to compiler messages!</p>
+<p><em>...looking for the old, web-based version of Rustlings? Try <a href="https://github.com/rust-lang/rustlings/tree/rustlings-1" rel="noopener noreferrer">here</a></em></p>
+<p>Alternatively, for a first-time Rust learner, there are several other resources:</p>
+<ul>
+<li><a href="https://doc.rust-lang.org/book/index.html" rel="noopener noreferrer">The Book</a> - The most comprehensive resource for learning Rust, but a bit theoretical sometimes. You will be using this along with Rustlings!</li>
+<li><a href="https://doc.rust-lang.org/rust-by-example/index.html" rel="noopener noreferrer">Rust By Example</a> - Learn Rust by solving little exercises! It's almost like <code>rustlings</code>, but online</li>
+</ul>
+<h2>Getting Started</h2>
+<p><em>Note: If you're on MacOS, make sure you've installed Xcode and its developer tools by typing <code>xcode-select --install</code>.</em>
+<em>Note: If you're on Linux, make sure you've installed gcc. Deb: <code>sudo apt install gcc</code>. Yum: <code>sudo yum -y install gcc</code>.</em></p>
+<p>You will need to have Rust installed. You can get it by visiting <a href="https://rustup.rs" rel="noopener noreferrer">https://rustup.rs</a>. This'll also install Cargo, Rust's package/project manager.</p>
+<h2>MacOS/Linux</h2>
+<p>Just run:</p>
+<pre style="background-color:#263238;"><span style="color:#82aaff;">curl</span><span style="color:#89ddff;"> -</span><span style="color:#f78c6c;">L</span><span style="color:#82aaff;"> https://raw.githubusercontent.com/rust-lang/rustlings/main/install.sh </span><span style="color:#89ddff;">| </span><span style="color:#82aaff;">bash
+</span></pre>
+
+<p>Or if you want it to be installed to a different path:</p>
+<pre style="background-color:#263238;"><span style="color:#82aaff;">curl</span><span style="color:#89ddff;"> -</span><span style="color:#f78c6c;">L</span><span style="color:#82aaff;"> https://raw.githubusercontent.com/rust-lang/rustlings/main/install.sh </span><span style="color:#89ddff;">| </span><span style="color:#82aaff;">bash</span><span style="color:#89ddff;"> -</span><span style="color:#f78c6c;">s</span><span style="color:#82aaff;"> mypath/
+</span></pre>
+
+<p>This will install Rustlings and give you access to the <code>rustlings</code> command. Run it to get started!</p>
+<h3>Nix</h3>
+<p>Basically: Clone the repository at the latest tag, finally run <code>nix develop</code> or <code>nix-shell</code>.</p>
+<pre style="background-color:#263238;"><span style="font-style:italic;color:#546e7a;"># find out the latest version at https://github.com/rust-lang/rustlings/releases/latest (on edit 5.6.1)
+</span><span style="color:#82aaff;">git clone</span><span style="color:#89ddff;"> -</span><span style="color:#f78c6c;">b</span><span style="color:#82aaff;"> 5.6.1</span><span style="color:#89ddff;"> --</span><span style="color:#f78c6c;">depth</span><span style="color:#82aaff;"> 1 https://github.com/rust-lang/rustlings
+</span><span style="color:#82aaff;">cd rustlings
+</span><span style="font-style:italic;color:#546e7a;"># if nix version &gt; 2.3
+</span><span style="color:#82aaff;">nix develop
+</span><span style="font-style:italic;color:#546e7a;"># if nix version &lt;= 2.3
+</span><span style="color:#82aaff;">nix-shell
+</span></pre>
+
+<h2>Windows</h2>
+<p>In PowerShell (Run as Administrator), set <code>ExecutionPolicy</code> to <code>RemoteSigned</code>:</p>
+<pre style="background-color:#263238;"><span style="color:#eeffff;">Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+</span></pre>
+
+<p>Then, you can run:</p>
+<pre style="background-color:#263238;"><span style="color:#eeffff;">Start-BitsTransfer -Source https://raw.githubusercontent.com/rust-lang/rustlings/main/install.ps1 -Destination $env:TMP/install_rustlings.ps1; Unblock-File $env:TMP/install_rustlings.ps1; Invoke-Expression $env:TMP/install_rustlings.ps1
+</span></pre>
+
+<p>To install Rustlings. Same as on MacOS/Linux, you will have access to the <code>rustlings</code> command after it. Keep in mind that this works best in PowerShell, and any other terminals may give you errors.</p>
+<p>If you get a permission denied message, you might have to exclude the directory where you cloned Rustlings in your antivirus.</p>
+<h2>Browser</h2>
+<p><a href="https://gitpod.io/#https://github.com/rust-lang/rustlings" rel="noopener noreferrer"><img src="https://gitpod.io/button/open-in-gitpod.svg" alt="Open in Gitpod"></a></p>
+<p><a href="https://github.com/codespaces/new/?repo=rust-lang%2Frustlings&amp;ref=main" rel="noopener noreferrer"><img src="https://github.com/codespaces/badge.svg" alt="Open Rustlings On Codespaces"></a></p>
+<h2>Manually</h2>
+<p>Basically: Clone the repository at the latest tag, run <code>cargo install --path .</code>.</p>
+<pre style="background-color:#263238;"><span style="font-style:italic;color:#546e7a;"># find out the latest version at https://github.com/rust-lang/rustlings/releases/latest (on edit 5.6.1)
+</span><span style="color:#82aaff;">git clone</span><span style="color:#89ddff;"> -</span><span style="color:#f78c6c;">b</span><span style="color:#82aaff;"> 5.6.1</span><span style="color:#89ddff;"> --</span><span style="color:#f78c6c;">depth</span><span style="color:#82aaff;"> 1 https://github.com/rust-lang/rustlings
+</span><span style="color:#82aaff;">cd rustlings
+</span><span style="color:#82aaff;">cargo install</span><span style="color:#89ddff;"> --</span><span style="color:#f78c6c;">force</span><span style="color:#89ddff;"> --</span><span style="color:#f78c6c;">path</span><span style="color:#82aaff;"> .
+</span></pre>
+
+<p>If there are installation errors, ensure that your toolchain is up to date. For the latest, run:</p>
+<pre style="background-color:#263238;"><span style="color:#82aaff;">rustup update
+</span></pre>
+
+<p>Then, same as above, run <code>rustlings</code> to get started.</p>
+<h2>Doing exercises</h2>
+<p>The exercises are sorted by topic and can be found in the subdirectory <code>rustlings/exercises/&lt;topic&gt;</code>. For every topic there is an additional README file with some resources to get you started on the topic. We really recommend that you have a look at them before you start.</p>
+<p>The task is simple. Most exercises contain an error that keeps them from compiling, and it's up to you to fix it! Some exercises are also run as tests, but rustlings handles them all the same. To run the exercises in the recommended order, execute:</p>
+<pre style="background-color:#263238;"><span style="color:#82aaff;">rustlings watch
+</span></pre>
+
+<p>This will try to verify the completion of every exercise in a predetermined order (what we think is best for newcomers). It will also rerun automatically every time you change a file in the <code>exercises/</code> directory. If you want to only run it once, you can use:</p>
+<pre style="background-color:#263238;"><span style="color:#82aaff;">rustlings verify
+</span></pre>
+
+<p>This will do the same as watch, but it'll quit after running.</p>
+<p>In case you want to go by your own order, or want to only verify a single exercise, you can run:</p>
+<pre style="background-color:#263238;"><span style="color:#82aaff;">rustlings run myExercise1
+</span></pre>
+
+<p>Or simply use the following command to run the next unsolved exercise in the course:</p>
+<pre style="background-color:#263238;"><span style="color:#82aaff;">rustlings run next
+</span></pre>
+
+<p>In case you get stuck, you can run the following command to get a hint for your
+exercise:</p>
+<pre style="background-color:#263238;"><span style="color:#82aaff;">rustlings hint myExercise1
+</span></pre>
+
+<p>You can also get the hint for the next unsolved exercise with the following command:</p>
+<pre style="background-color:#263238;"><span style="color:#82aaff;">rustlings hint next
+</span></pre>
+
+<p>To check your progress, you can run the following command:</p>
+<pre style="background-color:#263238;"><span style="color:#82aaff;">rustlings list
+</span></pre>
+
+<h2>Testing yourself</h2>
+<p>After every couple of sections, there will be a quiz that'll test your knowledge on a bunch of sections at once. These quizzes are found in <code>exercises/quizN.rs</code>.</p>
+<h2>Enabling <code>rust-analyzer</code></h2>
+<p>Run the command <code>rustlings lsp</code> which will generate a <code>rust-project.json</code> at the root of the project, this allows <a href="https://rust-analyzer.github.io/" rel="noopener noreferrer">rust-analyzer</a> to parse each exercise.</p>
+<h2>Continuing On</h2>
+<p>Once you've completed Rustlings, put your new knowledge to good use! Continue practicing your Rust skills by building your own projects, contributing to Rustlings, or finding other open-source projects to contribute to.</p>
+<h2>Uninstalling Rustlings</h2>
+<p>If you want to remove Rustlings from your system, there are two steps. First, you'll need to remove the exercises folder that the install script created
+for you:</p>
+<pre style="background-color:#263238;"><span style="color:#82aaff;">rm</span><span style="color:#89ddff;"> -</span><span style="color:#f78c6c;">rf</span><span style="color:#82aaff;"> rustlings </span><span style="font-style:italic;color:#546e7a;"># or your custom folder name, if you chose and or renamed it
+</span></pre>
+
+<p>Second, run <code>cargo uninstall</code> to remove the <code>rustlings</code> binary:</p>
+<pre style="background-color:#263238;"><span style="color:#82aaff;">cargo uninstall rustlings
+</span></pre>
+
+<p>Now you should be done!</p>
+<h2>Contributing</h2>
+<p>See <a href="https://github.com/rust-lang/rustlings/blob/main/CONTRIBUTING.md" rel="noopener noreferrer">CONTRIBUTING.md</a>.</p>
+<h2>Contributors ✨</h2>
+<p>Thanks goes to the wonderful people listed in <a href="https://github.com/rust-lang/rustlings/blob/main/AUTHORS.md" rel="noopener noreferrer">AUTHORS.md</a> 🎉</p>
+
+
+                </main>
+            </div>
+
+            <footer>
+                
+                    <a href="https://github.com/rust-lang/rustlings"><div class="github-icon" aria-hidden="true"></div></a>
+                
+                <span>
+                    rustlings
+                </span>
+            </footer>
+        </div>
+
+        
+            <script defer="true" data-domain="rustlings.cool" src="https://plausible.io/js/script.js"></script>
+        
+        
+
+        
+
+    <script src="/artifacts.js"></script>
+
+
+    </body>
+</html>
