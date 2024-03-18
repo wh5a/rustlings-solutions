@@ -9,7 +9,7 @@
 
 #[test]
 fn main() {
-    let mut vec1 = fill_vec();
+    let vec1 = fill_vec();
 
     assert_eq!(vec1, vec![22, 44, 66, 88]);
 }
